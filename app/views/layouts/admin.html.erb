@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Cms</title>
     <%= csrf_meta_tags %>
-
+    <title>Simple CMS: <%= @page_title || "Admin Area" %></title>
     <%= stylesheet_link_tag('admin', :media => 'all') %>
     <%= javascript_include_tag('application') %>
   </head>
